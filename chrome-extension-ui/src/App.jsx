@@ -12,8 +12,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello extension from react</h1>
-      <button onClick={toggleGrayscale}>Remove Color</button>
+      <h1>Vanish Colors</h1>
+      <button className = ".btn" onClick={toggleGrayscale} style = {{"backgroundColor" : "#89CFF0","marginLeft" : "55px"}}>Remove Color</button>
     </div>
   );
 }
