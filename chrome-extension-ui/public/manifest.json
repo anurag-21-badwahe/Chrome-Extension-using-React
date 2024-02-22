@@ -1,0 +1,17 @@
+{
+    "name": "Demo extension", 
+    "version": "0.1", 
+    "manifest_version": 3, 
+    "permissions": ["activeTab"], 
+    "action": {
+      "default_popup": "./index.html",
+      "default_width": 1400,
+      "default_height": 600
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"], 
+        "js": ["contentScript.js"] 
+      }
+    ]
+  }
